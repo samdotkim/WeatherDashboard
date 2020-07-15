@@ -6,10 +6,12 @@
     <title>sam.kim Weather Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Varela+Round&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  </head>
 <body>
-    <!-- sam.kim Navigation bar -->
+
+  <!-- sam.kim Navigation bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <img src="assets/img/logo.png" id=logo width=40px>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +23,7 @@
           <a class="nav-link" href="#">Project <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/samdotkim/WorkDayScheduler" target="_blank">GitHub</a>
+          <a class="nav-link" href="https://github.com/samdotkim/WeatherDashboard" target="_blank">GitHub</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="http://sam.kim">Portfolio</a>
@@ -33,37 +35,40 @@
     </div>
   </nav>
 
-
-    <!-- Weather Dashboard Header -->
-    <div class="jumbotron jumbotron-fluid">
+  
+  <!-- jumbotron -->
+    <div class="jumbotron">
         <div class="container">
-            <h1 class="display-5 text-center">Weather Dashboard</h1>
+            <h1 class="display-5 text-center animate__animated animate__flipInX">Weather Dashboard</h1>
         </div>
     </div>
     
-    <!-- Main Content Container -->
+    <!-- main container -->
     <div class="container-fluid">
-        <!-- Main Content Row -->
+
+        <!-- main content Row -->
         <div class="row">
-            <!-- City Search Bar -->
+
+            <!-- search bar -->
             <div class="col-3 searchCol">
-                <!-- Search Form with Button -->
+
+                <!-- search form with button -->
                 <h4>Search for a city:</h4>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="cityInput" placeholder="City Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <input type="text" class="form-control" id="inputCity" placeholder="City Name" aria-label="Recipient's username" aria-describedby="button-addon2">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-primary" type="button" id="citySearchBtn">
+                        <button class="btn btn-outline-primary" type="button" id="btnCitySearch">
                             <img src="assets/img/search.png" width="20px"/></button>
                         </div>
                     </div>
-                    <!-- City Table List -->
-                    <div class="list-group" id="cityList">
+                    <!-- city list table -->
+                    <div class="list-group" id="citiesList">
                       </div>                    
                 </div>
-                <!-- Weather Information Column -->
+                <!-- weather info column -->
                 <div class="col-9">
-                    <div class="card" style="width: 100%;" id="weatherContainer"></div>
-                      <div id="forecastContainer"></div>
+                    <div class="card" style="width: 100%;" id="weatherInformation"></div>
+                      <div id="forecastInformation"></div>
                 </div>
         </div>
     </div>

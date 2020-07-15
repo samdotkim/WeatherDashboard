@@ -1,18 +1,31 @@
-# Homework-6-WeatherDashboard.github.io
-[Launch Weather Dashboard](https://samdotkim.github.io/WeatherDashboard/)
+# HW 06: Weather Dashboard - sam.kim
 
+## Overview
 
-# 06 Server-Side APIs: Weather Dashboard
+This is a simple weather dashboard app that uses the OpenWeather API to retrieve weather data for any user inputted cities.
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+## Functionality
 
-Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use `localStorage` to store any persistent data.
+When a city is searched, the city's current weather conditions as well as 5-day forecast are retrieved from OpenWeather.
 
-## User Story
+The searched city is added to the search history and to localStorage so that if you open the weather dashboard again, you are presented with the last searched city's forecast. If you click on one of the cities in the search history, you are presented with the weather conditions for that city.
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+The weather icons and weather descriptions are also retrieved from OpenWeather. And the UV index is colored to indicate its severity.
 
+The following comp was initially provided to demonstrate the desired functionality for the dashboard. The front-end is built with Bootstrap and features custom CSS. The site has also been customized for mobile devices using Bootstrap utilities and classes for a responsive, mobile-friendly layout.
+
+## URL
+
+https://samdotkim.github.io/WeatherDashboard/
+
+## Credits
+
+1. OpenWeather API
+2. jQuery
+3. Bootstrap CSS
+4. Animate.css
+5. Google Fonts
+
+## Support
+
+For more information, please contact email@sam.kim
