@@ -1,5 +1,5 @@
 # Homework-6-WeatherDashboard.github.io
-[Launch Weather Dashboard](https://justinmarchi.github.io/Homework-6-WeatherDashboard.github.io)
+[Launch Weather Dashboard](https://samdotkim.github.io/WeatherDashboard/)
 
 
 # 06 Server-Side APIs: Weather Dashboard
